@@ -1,0 +1,12 @@
+---
+- name: Install php{{ php_version }}-xdebug
+  apt: pkg=php{{ php_version }}-xdebug state=present force=yes
+
+- name: Configure php{{ php_version }}-xdebug
+  template:
+    src: xdebug.ini.j2
+    dest: "{{ php_mod_path }}xdebug.ini"
+    owner: root
+    group: root
+    mode: u+rw,go+r
+  notify: restart php{{ php_version }}-fpm

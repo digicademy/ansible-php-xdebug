@@ -1,0 +1,24 @@
+---
+php_xdebug_default_enable: 1
+
+php_xdebug_remote_enable: 1
+
+php_xdebug_remote_handler: "dbgp"
+
+php_xdebug_remote_host: "10.0.2.2"
+
+php_xdebug_remote_port: 9000
+
+php_xdebug_remote_autostart: 0
+
+php_xdebug_remote_connect_back: "on"
+
+php_xdebug_max_nesting_level: 1000
+
+php_xdebug_cli_color: 2
+
+php_xdebug_var_display_max_children: 256
+
+php_xdebug_var_display_max_data: 1024
+
+php_xdebug_var_display_max_depth: 15

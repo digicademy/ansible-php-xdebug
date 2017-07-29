@@ -1,0 +1,19 @@
+---
+galaxy_info:
+  author: "Torsten Schrade"
+  description: "Ansible role that installs xdebug for PHP"
+  company: "Digital Academy – Academy of Sciences and Literature | Mainz"
+  license: "MIT"
+  min_ansible_version: 2.0
+  platforms:
+    - name: Debian
+      versions:
+        - wheezy
+        - jessie
+  galaxy_tags:
+    - web
+    - php
+
+dependencies:
+  - src: git+https://github.com/digicademy/ansible-php-fpm.git
+    name: php-fpm
